@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.4.4/d3.min.js" integrity="sha512-hnFpvCiJ8Fr1lYLqcw6wLgFUOEZ89kWCkO+cEekwcWPIPKyknKV1eZmSSG3UxXfsSuf+z/SgmiYB1zFOg3l2UQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>DOM Tree Visualization</title>
+</head>
+<body>
+    <header>
+        <h1>The Document Object Model (DOM)</h1>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>The Structure Of the DOM</h2>
+            <p>
+                Below is a dynamically generated representation of the DOM. 
+            </p>
+            <p>
+                Edit the structure below and see the changes.
+            </p>
+            <textarea id="dom-editor" rows="10" cols="50"><div><h1>Title</h1><p>Sample paragraph.</p></div></textarea>
+        </section>
+
+        <section id="dom-tree-visualization">
+            <h2>DOM Tree Visualization</h2>
+            <div id="tree-container"></div>
+        </section>
+
+        <section id="brief-info">
+            <p>
+                The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains
+                objects. DOM methods allow programmatic access to the tree. With them, you can change the document's structure, style, or content
+            </p>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">MDN Web Docs</a>
+            </p>
+            
+        </section>
+    </main>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

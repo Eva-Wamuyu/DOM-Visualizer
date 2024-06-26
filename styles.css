@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #007acc;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid #005b99;
+    margin-bottom: 10px;
+    padding: 20px 0;
+}
+header h1 {
+    font-size: 28px;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+section h2 {
+    font-size: 24px;
+    color: #007acc;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    resize: vertical;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#tree-container {
+    overflow: auto;
+    max-height: 550px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fafafa;
+    padding: 20px;
+}
+
+
+.link {
+    fill: none;
+    stroke: #555;
+    stroke-opacity: 0.6;
+    stroke-width: 1.5px;
+}
+
+.node circle {
+    fill: #007acc;
+    stroke: #005b99;
+    stroke-width: 2px;
+}
+
+.node text {
+    font: 12px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    fill: #333;
+}
+
+.node--internal circle {
+    fill: #1f77b4;
+}
+
+.node--leaf circle {
+    fill: #ff7f0e;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    textarea {
+        min-height: 120px;
+    }
+
+    form {
+        flex-basis: 100%;
+    }
+}
+
+
+
+
